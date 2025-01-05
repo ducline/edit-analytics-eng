@@ -139,3 +139,20 @@ models:
         data_type: timestamp
         data_tests:
           - not_null
+  - name: report_customer_segmentation
+    description: "Aggregates data to identify customer segments based on demographic or behavioral patterns and their responsiveness to promotional offers."
+    columns:
+      - name: demographic_segment
+        description: "The demographic segment of the customer."
+      - name: behavioral_segment
+        description: "The behavioral segment of the customer."
+      - name: response_rate
+        description: "The percentage of offers responded to within this segment."
+
+  - name: report_channel_effectiveness
+    description: "Analyzes the effectiveness of communication channels in driving customer responses to offers."
+    columns:
+      - name: communication_channel
+        description: "The channel through which the offer was communicated."
+      - name: response_rate
+        description: "The percentage of offers responded to via this channel."
